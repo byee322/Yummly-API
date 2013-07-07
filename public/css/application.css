@@ -11,3 +11,7 @@ th {
 .ingredients{
 	display: none;
 }
+
+li {
+	list-style-type: none;
+}

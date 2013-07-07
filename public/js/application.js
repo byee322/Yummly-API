@@ -10,5 +10,8 @@ $(document).ready(function() {
 		});
 	});
 
-	$('#bottom').on('click','a#recipe')
+	$('#bottom').on('click','.show_ingredients', function(e){
+		e.preventDefault();
+		$(this).next().toggle('fast');
+	});
 });

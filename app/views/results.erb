@@ -3,15 +3,20 @@
 	<p>Results Found: <%= @results.count %></p>
 
 	<% @results.each do |recipe|%>
+
 	<ul>
+		<img src=<%=recipe.images.first.small_url%>>
+
 		<div class ="recipe_names">
-			<h3><%= recipe.id %></h3>
+			<a href="#" class="show_ingredients"><h3><%= recipe.recipe_name %></h3></a>
+
+			<div class ="ingredients">
+				<% recipe.ingredients.each do |i| %>
+				<li><%= i %></li>
+				<% end %>
+			</div>
+
 		</div>
-		<div class ="ingredients">
-			<% recipe.ingredients.each do |i| %>
-			<li> <%= i %> </li>
-			<% end %>
-		</ul>
-	</div>
+	</ul>
 	<% end %>
 </div>
