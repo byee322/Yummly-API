@@ -1,4 +1,4 @@
-Yummly-API
+Devbootcamp Challenge - Yummly-API
 ==========
 
 Creating my own Web App that interacts with Yummly API
